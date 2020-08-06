@@ -83,6 +83,8 @@ address {
 }
 
 .title-label {
+  display: inline-flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -90,6 +92,15 @@ address {
   text-transform: uppercase;
   color: var(--dark-color);
   margin: 0 0 20px;
+}
+
+.title-label:before {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 20px;
 }
 
 .section-title {
@@ -176,6 +187,16 @@ address {
 
 .social-list {
   display: flex;
+  align-items: center;
+}
+
+.social-list:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 20px;
 }
 
 .social-item:not(:last-child) {
@@ -189,6 +210,34 @@ address {
   letter-spacing: 0.2em;
   color: var(--dark-color);
   text-decoration: none;
+}
+
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: var(--dark-color);
+}
+
+.social-icons-link:hover .social-icon,
+.social-icons-link:focus .social-icon {
+  fill: var(--accent-color);
 }
 
 .page-header {
@@ -210,7 +259,28 @@ address {
 }
 
 .hero {
-  background: rgba(25, 28, 38, 0.2);
+  /* background: rgba(25, 28, 38, 0.2); */
+}
+
+.hero .container {
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2) 0%, rgba(25, 28, 38, 0.2) 100%), url(../images/hero/3.jpg);
+  background-repeat: no-repeat;
+  background-position: 115px 0;
+}
+
+.hero .title-label {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero .section-description {
+  color: #9da4bd;
+}
+
+.hero-content {
+  max-width: 50%;
+  padding-top: 150px;
+  padding-bottom: 206px;
+  padding-left: 200px;
 }
 
 .about-us-list {
@@ -227,7 +297,10 @@ address {
 }
 
 .prices {
-  background: #191c26;
+  background-color: #111319;
+  background-image: url(../images/price-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .price-list {
@@ -237,6 +310,10 @@ address {
 
 .price-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.team {
+  background-color: #f7f7f7;
 }
 
 .team-list {
@@ -265,6 +342,7 @@ address {
   line-height: 1.136;
   text-align: center;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 
 .gallery-list {
@@ -279,6 +357,10 @@ address {
 
 .gallery-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.contacts {
+  padding-left: 100px;
 }
 
 .contacts-item:not(:last-child) {
@@ -296,8 +378,17 @@ address {
   text-decoration: none;
 }
 
+.contacts-icon {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
 .dark-background {
-  background: #191c26;
+  background-color: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center right;
 }
 
 .footer {
