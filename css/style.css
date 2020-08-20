@@ -6,7 +6,7 @@
   --grey: #9da4bd;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   src: url("../fonts/open_sans/opensans-regular-webfont.woff2") format("woff2"),
     url("../fonts/open_sans/opensans-regular-webfont.woff") format("woff");
@@ -20,12 +20,11 @@
     url("../fonts/open_sans/opensans-semibold-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal;
-}
+} */
 
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -149,6 +148,16 @@ address {
 
 .btn-dark {
   color: var(--dark-color);
+}
+
+.btn-submit:disabled,
+.btn-submit:disabled:hover {
+  background-color: #cccccc;
+  border-color: grey;
+}
+
+.btn-wrap {
+  text-align: center;
 }
 
 .phone-link {
@@ -326,6 +335,15 @@ address {
   background-image: url(../images/price-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #9da4bd;
+}
+
+.prices .section-title {
+  color: white;
+}
+
+.prices .title-label {
+  color: rgba(157, 164, 189, 0.6);
 }
 
 .price-list {
@@ -384,8 +402,60 @@ address {
   margin-right: 0;
 }
 
+/* .contact-us-form:focus-within .btn-submit, */
+.contact-us-field:focus ~ .btn-submit {
+  background: var(--accent-color);
+}
+
+.contact-us-field {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 8px 0;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: white;
+  background: transparent;
+  margin-bottom: 44px;
+}
+
+.contact-us-field:valid:required:not(:placeholder-shown) {
+  border-bottom: 1px solid green;
+  color: green;
+}
+
+.contact-us-field:invalid:required:not(:placeholder-shown) {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.contact-us-field:not(.contact-us-message) {
+  width: calc(50% - 15px);
+}
+
+.contact-us-field:first-child {
+  margin-right: 26px;
+}
+
+.contact-us-field::placeholder {
+  font-size: 11px;
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+}
+
+.contact-us-message {
+  width: 100%;
+  resize: none;
+}
+
 .contacts {
   padding-left: 100px;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
 }
 
 .contacts-item:not(:last-child) {
@@ -408,12 +478,21 @@ address {
   margin-right: 20px;
 }
 
+.work-time {
+  padding-top: 70px;
+  color: #9da4bd;
+}
+
+.work-time .title-label {
+  color: white;
+}
+
 .dark-background {
   background-color: #191c26;
-  background-image: url(../images/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-size: 50% auto;
-  background-position: center right;
+}
+
+.dark-background .flexbox {
+  justify-content: space-between;
 }
 
 .footer {
