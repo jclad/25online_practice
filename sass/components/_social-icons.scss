@@ -1,0 +1,27 @@
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: $white;
+  border-radius: 50%;
+
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: $accent-color;
+  }
+}
+
+.social-icon {
+  fill: $dark-color;
+}

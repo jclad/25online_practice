@@ -1,0 +1,32 @@
+.team {
+  background-color: #f7f7f7;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.member-name {
+  font-size: 18px;
+  line-height: 1.389;
+  text-align: center;
+  color: $dark-color;
+}
+
+.member-position {
+  font-size: 14px;
+  line-height: 1.136;
+  text-align: center;
+  color: $accent-color;
+  margin-bottom: 30px;
+}

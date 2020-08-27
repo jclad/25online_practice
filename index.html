@@ -7,8 +7,7 @@
     <title>BarberShop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header  page_header_title">
@@ -17,20 +16,20 @@
           <a href="./" class="logo"><img src="./images/logo.png" alt="Логотип BarberShop"/></a>
           <ul class="list menu-list">
             <li class="menu-item">
-              <a href="#" class="menu-link">О нас</a>
+              <a href="#" class="link menu-link">О нас</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Услуги и цены</a>
+              <a href="#" class="link menu-link">Услуги и цены</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Мастера</a>
+              <a href="#" class="link menu-link">Мастера</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Контакты</a>
+              <a href="#" class="link menu-link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
+        <a href="tel:+380441111111" class="link phone-link">+38 044 111 11 11</a>
         <button class="btn" data-modal-open>
           Онлайн запись
         </button>
@@ -52,10 +51,10 @@
         <div class="hero-sidebar">
           <ul class="list social-list">
             <li class="social-item">
-              <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">Instagram</a>
+              <a href="#" class="link social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">Instagram</a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Ютуб">Youtube</a>
+              <a href="#" class="link social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Ютуб">Youtube</a>
             </li>
           </ul>
         </div>
@@ -63,11 +62,11 @@
     </section>
     <section class="section about-us">
       <div class="container flexbox">
-        <ul class="list content-box about-us-list">
-          <li class="about-us-item">
+        <ul class="list content-box flexbox">
+          <li class="content-box">
             <img src="./images/about/img1.jpg" width="270" height="445" alt="модная борода 2020" />
           </li>
-          <li class="about-us-item">
+          <li class="content-box">
             <img src="./images/about/img2.jpg" width="270" height="445" alt="модная мужская стрижка 2020" />
           </li>
         </ul>
@@ -103,19 +102,20 @@
         </h2>
         <div class="prices-content flexbox">
           <ul class="list price-list">
-            <li class="price-item"><span>Мужская стрижка </span><span> от 300 грн.</span></li>
-            <li class="price-item"><span>Стрижка бороды </span><span> от 200 грн.</span></li>
-            <li class="price-item"><span>Стрижка усов </span><span> от 200 грн.</span></li>
-            <li class="price-item"><span>Бритье опасной бритвой </span><span> от 200 грн.</span></li>
+            <li class="price-item"><span>Мужская стрижка </span> <span class="price-line"></span> <span> от 300 грн.</span></li>
+            <li class="price-item"><span>Стрижка бороды </span> <span class="price-line"></span> <span> от 200 грн.</span></li>
+            <li class="price-item"><span>Стрижка усов </span> <span class="price-line"></span> <span> от 200 грн.</span></li>
+            <li class="price-item"><span>Бритье опасной бритвой </span> <span class="price-line"></span> <span> от 200 грн.</span></li>
           </ul>
           <ul class="list price-list">
-            <li class="price-item"><span>Cтрижка у стажера </span><span> от 50 грн.</span></li>
-            <li class="price-item"><span>Стрижка под насадку </span><span> от 200 грн.</span></li>
+            <li class="price-item"><span>Cтрижка у стажера </span> <span class="price-line"></span> <span> от 50 грн.</span></li>
+            <li class="price-item"><span>Стрижка под насадку </span> <span class="price-line"></span> <span> от 200 грн.</span></li>
             <li class="price-item">
               <span>Детская стрижка (до 12 лет) </span>
+              <span class="price-line"></span>
               от 300 грн.<span></span>
             </li>
-            <li class="price-item"><span>Камуфлирование седины </span><span> от 200 грн.</span></li>
+            <li class="price-item"><span>Камуфлирование седины </span><span class="price-line"></span><span> от 200 грн.</span></li>
           </ul>
         </div>
         <div class="btn-wrap">
@@ -181,7 +181,7 @@
               <li class="social-icons-item">
                 <a
                   href="https://www.instagram.com/"
-                  class="social-icons-link"
+                  class="link social-icons-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="ссылка Инстаграм"
@@ -296,7 +296,13 @@
                 </a>
               </li>
               <li class="social-icons-item">
-                <a href="https://www.linkedin.com/" class="social-icons-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка Линкедин">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="link social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка Линкедин"
+                >
                   <svg class="social-icon" width="20" height="20">
                     <use href="./images/icons/sprite.svg#linkedin"></use>
                   </svg>
@@ -352,7 +358,7 @@
           <address>
             <ul class="list contacts-list">
               <li class="contacts-item">
-                <a href="https://goo.gl/maps/9ogvg6w3DNeqFm7BA" class="contacts-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://goo.gl/maps/9ogvg6w3DNeqFm7BA" class="link contacts-link" target="_blank" rel="noopener noreferrer">
                   <svg class="contacts-icon" width="24" height="24">
                     <use href="./images/icons/sprite.svg#map-pin"></use>
                   </svg>
@@ -360,7 +366,7 @@
                 </a>
               </li>
               <li class="contacts-item">
-                <a href="tel:+380441111111" class="contacts-link">
+                <a href="tel:+380441111111" class="link contacts-link">
                   <svg class="contacts-icon" width="24" height="24">
                     <use href="./images/icons/sprite.svg#shape"></use>
                   </svg>
@@ -368,7 +374,7 @@
                 </a>
               </li>
               <li class="contacts-item">
-                <a href="mailto:barbershop@email.com" class="contacts-link">
+                <a href="mailto:barbershop@email.com" class="link contacts-link">
                   <svg class="contacts-icon" width="24" height="24">
                     <use href="./images/icons/sprite.svg#mail"></use>
                   </svg>
@@ -389,24 +395,24 @@
         <span class="copyright">&copy; Copyright 2020</span>
         <ul class="list social-list">
           <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">
+            <a href="#" class="link social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Инстаграм">
               Instagram
             </a>
           </li>
           <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Ютуб">
+            <a href="#" class="link social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Ютуб">
               Youtube
             </a>
           </li>
         </ul>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" data-modal-close>X</button>
         <p class="message">This is modal!</p>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

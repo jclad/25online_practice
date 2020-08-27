@@ -1,0 +1,38 @@
+.phone-link,
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: $white;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  padding: 12px 20px;
+  transition: background-color 0.5s ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    transition: background-color 0.2s ease-in;
+  }
+}
+
+.btn-dark {
+  color: $dark-color;
+}
+
+.btn-submit:disabled,
+.btn-submit:disabled:hover {
+  background-color: #cccccc;
+  border-color: grey;
+}
+
+.btn-wrap {
+  text-align: center;
+}

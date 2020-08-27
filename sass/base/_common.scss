@@ -1,0 +1,128 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: $main-color;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dark-background {
+  background-color: #191c26;
+}
+
+.dark-background .flexbox {
+  justify-content: space-between;
+}
+
+.flexbox {
+  display: flex;
+}
+.content-box {
+  width: calc((100% - 30px) / 2);
+}
+
+.section {
+  padding: 130px 0;
+}
+.section .flexbox {
+  justify-content: space-between;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-color;
+}
+
+.page-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: $white;
+  margin: 0 0 20px;
+}
+
+.title-label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $dark-color;
+  margin: 0 0 20px;
+}
+
+.title-label:before {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 20px;
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: $dark-color;
+  margin: 0 0 44px;
+}
+.white-title {
+  color: $white;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+}
+
+.phone-link {
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
