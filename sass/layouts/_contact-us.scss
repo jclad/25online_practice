@@ -1,4 +1,5 @@
 .contact-us-field {
+  width: 100%;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -26,11 +27,11 @@
   }
 
   &:not(.contact-us-message) {
-    width: calc(50% - 15px);
+    // width: calc(50% - 15px);
   }
 
   &:first-child {
-    margin-right: 26px;
+    // margin-right: 26px;
   }
 
   &::placeholder {
@@ -41,6 +42,5 @@
 }
 
 .contact-us-message {
-  width: 100%;
   resize: none;
 }

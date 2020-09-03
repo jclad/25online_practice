@@ -1,13 +1,18 @@
 .footer {
-  padding: 56px 0;
+  padding: 44px 0;
+  // padding: 56px 0;
 
   .flexbox {
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 }
 
 .copyright {
+  width: 100%;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;

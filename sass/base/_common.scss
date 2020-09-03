@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  // outline: 2px solid tomato;
 }
 
 body {
@@ -21,12 +22,34 @@ body {
   color: $main-color;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .dark-background {
@@ -38,14 +61,22 @@ body {
 }
 
 .flexbox {
-  display: flex;
+  // display: flex;
 }
 .content-box {
-  width: calc((100% - 30px) / 2);
+  // width: calc((100% - 30px) / 2);
 }
 
 .section {
-  padding: 130px 0;
+  padding: 84px 0;
+
+  @include for-size(tablet-landscape) {
+    padding: 100px 0;
+  }
+
+  @include for-size(desktop) {
+    padding: 130px 0;
+  }
 }
 .section .flexbox {
   justify-content: space-between;
@@ -69,7 +100,8 @@ address {
 .page-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 48px;
+  // font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: $white;
@@ -78,7 +110,7 @@ address {
 
 .title-label {
   display: inline-flex;
-  align-items: center;
+  // align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -95,29 +127,39 @@ address {
   height: 1px;
   background-color: currentColor;
   margin-right: 20px;
+  margin-top: 7px;
 }
 
 .section-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.167;
   letter-spacing: 0.05em;
   color: $dark-color;
   margin: 0 0 44px;
+
+  @include for-size(desktop) {
+    font-size: 42px;
+  }
 }
 .white-title {
   color: $white;
 }
 
 .section-description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.667;
   letter-spacing: 0.02em;
   margin: 0 0 20px;
+
+  @include for-size(desktop) {
+    font-size: 18px;
+  }
 }
 
 .phone-link {
+  display: none;
   margin-right: 40px;
 }
 

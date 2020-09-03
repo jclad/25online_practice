@@ -1,13 +1,17 @@
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .gallery-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
+  // width: calc((100% - 30px * 3) / 4);
+  // margin-right: 30px;
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
+
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
 }
